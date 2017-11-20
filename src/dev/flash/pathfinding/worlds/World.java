@@ -1,5 +1,6 @@
 package dev.flash.pathfinding.worlds;
 
+import com.sun.javafx.geom.Vec2d;
 import dev.flash.pathfinding.Handler;
 import dev.flash.pathfinding.entities.Entity;
 import dev.flash.pathfinding.entities.EntityManager;
@@ -57,7 +58,12 @@ public class World {
 			}
 		}
 		System.out.println(tileManager.getTiles().size() + " tiles on map");
+		placeEntities();
 		System.out.println("Map Successfully loaded.");
+	}
+	
+	private void placeEntities(){
+		entityManager.addEntity(new Entity(handler, new Vec2d(4*32,4*32), 5));
 	}
 	
 	public void tick(double delta) {

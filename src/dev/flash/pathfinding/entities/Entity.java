@@ -8,7 +8,7 @@ import dev.flash.pathfinding.timers.Timer;
 import java.awt.*;
 import java.util.ArrayList;
 
-public abstract class Entity {
+public class Entity {
 	
 	//DEFAULT ENTITY VARIABLES
 	protected static final int DEFAULT_WIDTH = 32;
@@ -28,12 +28,12 @@ public abstract class Entity {
 	//Entity's timers
 	protected ArrayList<Timer> timers = new ArrayList<>();
 	
-	public Entity(Handler handler, Vec2d coord, float speed, int width, int height) {
+	public Entity(Handler handler, Vec2d coord, float speed) {
 		this.handler = handler;
 		this.coord = coord;
 		this.speed = speed;
-		this.width = width;
-		this.height = height;
+		this.width = DEFAULT_WIDTH;
+		this.height = DEFAULT_HEIGHT;
 		bounds = new Rectangle(0, 0, width, height);
 	}
 	
@@ -47,7 +47,7 @@ public abstract class Entity {
 	}
 	
 	public void render(Graphics g) {
-		g.drawImage(Assets.sicky_up[0], (int) (coord.x - handler.getGameCamera().getxOffset()), (int) (coord.y - handler.getGameCamera().getyOffset()), width, height, null);
+		g.drawImage(Assets.player_idle_down, (int) (coord.x - handler.getGameCamera().getxOffset()), (int) (coord.y - handler.getGameCamera().getyOffset()), width, height, null);
 		
 	}
 	

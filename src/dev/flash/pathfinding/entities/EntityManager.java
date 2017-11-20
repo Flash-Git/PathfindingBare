@@ -39,6 +39,9 @@ public class EntityManager {
 			e.tick(delta);
 		}
 	}
+	public void addEntity(Entity e){
+		entities.add(e);
+	}
 	
 	public void render(Graphics g) {
 		entities.sort(renderSorter);//TODO is adding this here best option

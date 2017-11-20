@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8929045b-bd85-4302-a9bc-5344266f992b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dev/flash/pathfinding/Game.java" afterPath="$PROJECT_DIR$/src/dev/flash/pathfinding/Game.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dev/flash/pathfinding/Handler.java" afterPath="$PROJECT_DIR$/src/dev/flash/pathfinding/Handler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dev/flash/pathfinding/Launcher.java" afterPath="$PROJECT_DIR$/src/dev/flash/pathfinding/Launcher.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dev/flash/pathfinding/display/Display.java" afterPath="$PROJECT_DIR$/src/dev/flash/pathfinding/display/Display.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dev/flash/pathfinding/entities/Entity.java" afterPath="$PROJECT_DIR$/src/dev/flash/pathfinding/entities/Entity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dev/flash/pathfinding/gfx/GameCamera.java" afterPath="$PROJECT_DIR$/src/dev/flash/pathfinding/gfx/GameCamera.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dev/flash/pathfinding/states/GameState.java" afterPath="$PROJECT_DIR$/src/dev/flash/pathfinding/states/GameState.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dev/flash/pathfinding/states/State.java" afterPath="$PROJECT_DIR$/src/dev/flash/pathfinding/states/State.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dev/flash/pathfinding/timers/TimerManager.java" afterPath="$PROJECT_DIR$/src/dev/flash/pathfinding/timers/TimerManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dev/flash/pathfinding/entities/EntityManager.java" afterPath="$PROJECT_DIR$/src/dev/flash/pathfinding/entities/EntityManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dev/flash/pathfinding/pathfinding/Node.java" afterPath="$PROJECT_DIR$/src/dev/flash/pathfinding/pathfinding/Node.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dev/flash/pathfinding/worlds/World.java" afterPath="$PROJECT_DIR$/src/dev/flash/pathfinding/worlds/World.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -23,37 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="World.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dev/flash/pathfinding/worlds/World.java">
+      <file leaf-file-name="Node.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dev/flash/pathfinding/pathfinding/Node.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-765">
-              <caret line="30" column="49" lean-forward="false" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1740#1741#0" expanded="true" />
-                <element signature="e#1771#1772#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EntityManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dev/flash/pathfinding/entities/EntityManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1105">
-              <caret line="65" column="1" lean-forward="true" selection-start-line="65" selection-start-column="1" selection-end-line="65" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Display.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dev/flash/pathfinding/display/Display.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="39" column="4" lean-forward="false" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
+            <state relative-caret-position="255">
+              <caret line="15" column="14" lean-forward="false" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -62,8 +30,32 @@
       <file leaf-file-name="Assets.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dev/flash/pathfinding/gfx/Assets.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            <state relative-caret-position="119">
+              <caret line="11" column="64" lean-forward="false" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="64" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="World.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dev/flash/pathfinding/worlds/World.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="65" column="63" lean-forward="false" selection-start-line="65" selection-start-column="63" selection-end-line="65" selection-end-column="63" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1790#1791#0" expanded="true" />
+                <element signature="e#1866#1867#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Entity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/dev/flash/pathfinding/entities/Entity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="731">
+              <caret line="49" column="43" lean-forward="false" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -79,70 +71,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ImageLoader.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dev/flash/pathfinding/gfx/ImageLoader.java">
+      <file leaf-file-name="EntityManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dev/flash/pathfinding/entities/EntityManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="14" column="9" lean-forward="false" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Sprite.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dev/flash/pathfinding/gfx/Sprite.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Handler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dev/flash/pathfinding/Handler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="25" column="24" lean-forward="true" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+            <state relative-caret-position="442">
+              <caret line="41" column="17" lean-forward="false" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
               <folding>
-                <element signature="e#583#584#0" expanded="true" />
-                <element signature="e#610#611#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1075#1076#0" expanded="true" />
+                <element signature="e#1097#1098#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Game.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/dev/flash/pathfinding/Game.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="158" column="25" lean-forward="false" selection-start-line="158" selection-start-column="25" selection-end-line="158" selection-end-column="25" />
-              <folding>
-                <element signature="e#3469#3470#0" expanded="true" />
-                <element signature="e#3513#3514#0" expanded="true" />
-                <element signature="e#3541#3542#0" expanded="true" />
-                <element signature="e#3586#3587#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Launcher.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dev/flash/pathfinding/Launcher.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="36" lean-forward="false" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameState.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dev/flash/pathfinding/states/GameState.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="14" column="53" lean-forward="false" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="53" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -171,16 +109,16 @@
         <option value="$PROJECT_DIR$/src/dev/flash/pathfinding/tiles/ChunkManager.java" />
         <option value="$PROJECT_DIR$/src/dev/flash/pathfinding/Handler.java" />
         <option value="$PROJECT_DIR$/src/dev/flash/pathfinding/pathfinding/Algo.java" />
-        <option value="$PROJECT_DIR$/src/dev/flash/pathfinding/pathfinding/Node.java" />
-        <option value="$PROJECT_DIR$/src/dev/flash/pathfinding/entities/Entity.java" />
         <option value="$PROJECT_DIR$/src/dev/flash/pathfinding/Launcher.java" />
         <option value="$PROJECT_DIR$/src/dev/flash/pathfinding/states/GameState.java" />
         <option value="$PROJECT_DIR$/src/dev/flash/pathfinding/states/State.java" />
         <option value="$PROJECT_DIR$/src/dev/flash/pathfinding/gfx/GameCamera.java" />
         <option value="$PROJECT_DIR$/src/dev/flash/pathfinding/display/Display.java" />
-        <option value="$PROJECT_DIR$/src/dev/flash/pathfinding/worlds/World.java" />
-        <option value="$PROJECT_DIR$/src/dev/flash/pathfinding/entities/EntityManager.java" />
         <option value="$PROJECT_DIR$/src/dev/flash/pathfinding/Game.java" />
+        <option value="$PROJECT_DIR$/src/dev/flash/pathfinding/pathfinding/Node.java" />
+        <option value="$PROJECT_DIR$/src/dev/flash/pathfinding/entities/EntityManager.java" />
+        <option value="$PROJECT_DIR$/src/dev/flash/pathfinding/worlds/World.java" />
+        <option value="$PROJECT_DIR$/src/dev/flash/pathfinding/entities/Entity.java" />
       </list>
     </option>
   </component>
@@ -444,12 +382,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1511157313025</updated>
-      <workItem from="1511157318265" duration="4913000" />
+      <workItem from="1511157318265" duration="6814000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4913000" />
+    <option name="totallyTimeSpent" value="6814000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -695,51 +633,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dev/flash/pathfinding/pathfinding/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="5" lean-forward="false" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dev/flash/pathfinding/entities/Entity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="38" column="4" lean-forward="false" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
-          <folding>
-            <element signature="e#1306#1307#0" expanded="true" />
-            <element signature="e#1325#1326#0" expanded="true" />
-            <element signature="e#1362#1363#0" expanded="true" />
-            <element signature="e#1387#1388#0" expanded="true" />
-            <element signature="e#1415#1416#0" expanded="true" />
-            <element signature="e#1435#1436#0" expanded="true" />
-            <element signature="e#1474#1475#0" expanded="true" />
-            <element signature="e#1501#1502#0" expanded="true" />
-            <element signature="e#1530#1531#0" expanded="true" />
-            <element signature="e#1549#1550#0" expanded="true" />
-            <element signature="e#1588#1589#0" expanded="true" />
-            <element signature="e#1613#1614#0" expanded="true" />
-            <element signature="e#1640#1641#0" expanded="true" />
-            <element signature="e#1657#1658#0" expanded="true" />
-            <element signature="e#1692#1693#0" expanded="true" />
-            <element signature="e#1713#1714#0" expanded="true" />
-            <element signature="e#1742#1743#0" expanded="true" />
-            <element signature="e#1761#1762#0" expanded="true" />
-            <element signature="e#1800#1801#0" expanded="true" />
-            <element signature="e#1825#1826#0" expanded="true" />
-            <element signature="e#1859#1860#0" expanded="true" />
-            <element signature="e#1879#1880#0" expanded="true" />
-            <element signature="e#1924#1925#0" expanded="true" />
-            <element signature="e#1951#1952#0" expanded="true" />
-            <element signature="e#1992#1993#0" expanded="true" />
-            <element signature="e#2012#2013#0" expanded="true" />
-            <element signature="e#2064#2065#0" expanded="true" />
-            <element signature="e#2091#2092#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/worlds/world3.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -815,22 +708,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dev/flash/pathfinding/gfx/Assets.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dev/flash/pathfinding/gfx/GameCamera.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="29" column="4" lean-forward="false" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dev/flash/pathfinding/gfx/ImageLoader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -855,28 +732,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dev/flash/pathfinding/entities/EntityManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1105">
-          <caret line="65" column="1" lean-forward="true" selection-start-line="65" selection-start-column="1" selection-end-line="65" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dev/flash/pathfinding/worlds/World.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-765">
-          <caret line="30" column="49" lean-forward="false" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1740#1741#0" expanded="true" />
-            <element signature="e#1771#1772#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dev/flash/pathfinding/Game.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -887,6 +742,62 @@
             <element signature="e#3541#3542#0" expanded="true" />
             <element signature="e#3586#3587#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dev/flash/pathfinding/entities/EntityManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="41" column="17" lean-forward="false" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1075#1076#0" expanded="true" />
+            <element signature="e#1097#1098#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dev/flash/pathfinding/worlds/World.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="65" column="63" lean-forward="false" selection-start-line="65" selection-start-column="63" selection-end-line="65" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1790#1791#0" expanded="true" />
+            <element signature="e#1866#1867#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dev/flash/pathfinding/gfx/GameCamera.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="29" column="4" lean-forward="false" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dev/flash/pathfinding/pathfinding/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="14" lean-forward="false" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dev/flash/pathfinding/gfx/Assets.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="11" column="64" lean-forward="false" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dev/flash/pathfinding/entities/Entity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="49" column="43" lean-forward="false" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>
