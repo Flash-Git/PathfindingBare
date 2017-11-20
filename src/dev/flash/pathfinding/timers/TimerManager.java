@@ -30,7 +30,6 @@ public class TimerManager {
 	}
 	
 	
-	
 	private void toAddTimers() {
 		for(Timer t : toAdd)
 			addTimer(t);

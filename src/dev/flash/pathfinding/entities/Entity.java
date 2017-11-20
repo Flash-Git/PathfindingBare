@@ -1,6 +1,8 @@
 package dev.flash.pathfinding.entities;
 
+import com.sun.javafx.geom.Vec2d;
 import dev.flash.pathfinding.Handler;
+import dev.flash.pathfinding.gfx.Assets;
 import dev.flash.pathfinding.timers.Timer;
 
 import java.awt.*;
@@ -18,37 +20,36 @@ public abstract class Entity {
 	protected int width, height;
 	
 	//MOVEMENT
-	protected float x, y;
-	protected float relativeX, relativeY;//x and y only change at end of tick
-	protected double vX, vY;
+	protected Vec2d coord;
+	protected Vec2d vel;
+	protected float speed;
 	protected Rectangle bounds;
 	
-	
 	//Entity's timers
-	protected ArrayList<Timer> timers = new ArrayList<Timer>();
+	protected ArrayList<Timer> timers = new ArrayList<>();
 	
-	public Entity(Handler handler, float x, float y, int width, int height) {
+	public Entity(Handler handler, Vec2d coord, float speed, int width, int height) {
 		this.handler = handler;
-		this.x = x;
-		this.y = y;
+		this.coord = coord;
+		this.speed = speed;
 		this.width = width;
 		this.height = height;
 		bounds = new Rectangle(0, 0, width, height);
 	}
 	
 	
-	protected void addTimers() {
-	}
-	
-	
 	//TICK RENDER ACCEPT
 	
 	public void tick(double delta) {
-		x += relativeX;
-		y += relativeY;
+		coord.x = +vel.x;
+		coord.y = +vel.y;
+		
 	}
 	
-	public abstract void render(Graphics g);
+	public void render(Graphics g) {
+		g.drawImage(Assets.sicky_up[0], (int) (coord.x - handler.getGameCamera().getxOffset()), (int) (coord.y - handler.getGameCamera().getyOffset()), width, height, null);
+		
+	}
 	
 	
 	//Getters and Setters
@@ -70,19 +71,43 @@ public abstract class Entity {
 		this.height = height;
 	}
 	
-	public float getX() {
-		return x;
+	public Vec2d getCoord() {
+		return coord;
 	}
 	
-	public void setX(float x) {
-		this.x = x;
+	public void setCoord(Vec2d coord) {
+		this.coord = coord;
 	}
 	
-	public float getY() {
-		return y;
+	public Vec2d getVel() {
+		return vel;
 	}
 	
-	public void setY(float y) {
-		this.y = y;
+	public void setVel(Vec2d vel) {
+		this.vel = vel;
+	}
+	
+	public float getSpeed() {
+		return speed;
+	}
+	
+	public void setSpeed(float speed) {
+		this.speed = speed;
+	}
+	
+	public Rectangle getBounds() {
+		return bounds;
+	}
+	
+	public void setBounds(Rectangle bounds) {
+		this.bounds = bounds;
+	}
+	
+	public ArrayList<Timer> getTimers() {
+		return timers;
+	}
+	
+	public void setTimers(ArrayList<Timer> timers) {
+		this.timers = timers;
 	}
 }

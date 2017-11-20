@@ -157,13 +157,6 @@ public class Game implements Runnable {
 	}
 	
 	//Getters and Setters
-	public State getGameState() {
-		return gameState;
-	}
-	
-	public void setGameState(State gameState) {
-		this.gameState = gameState;
-	}
 	
 	
 	public int getFPS() {
@@ -179,20 +172,12 @@ public class Game implements Runnable {
 		return timerManager;
 	}
 	
-	public void setWidth(int width) {
-		this.width = width;
-	}
-	
-	public void setHeight(int height) {
-		this.height = height;
-	}
-	
 	public int getWidth() {
-		return width;
+		return display.getCanvas().getWidth();
 	}
 	
 	public int getHeight() {
-		return height;
+		return display.getCanvas().getHeight();
 	}
 	
 }

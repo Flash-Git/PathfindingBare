@@ -24,10 +24,8 @@ public abstract class State {
 		currentState = state;
 	}
 	
-	
 	public static State getState() {
 		return currentState;
 	}
-	
 	
 }

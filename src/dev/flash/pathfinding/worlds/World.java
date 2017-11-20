@@ -1,7 +1,10 @@
 package dev.flash.pathfinding.worlds;
 
 import dev.flash.pathfinding.Handler;
-import dev.flash.pathfinding.tiles.*;
+import dev.flash.pathfinding.entities.Entity;
+import dev.flash.pathfinding.entities.EntityManager;
+import dev.flash.pathfinding.tiles.Tile;
+import dev.flash.pathfinding.tiles.TileManager;
 import dev.flash.pathfinding.timers.TimerManager;
 import dev.flash.pathfinding.utils.Utils;
 
@@ -19,13 +22,13 @@ public class World {
 	
 	private TileManager tileManager;
 	private TimerManager timerManager;
-	
+	private EntityManager entityManager;
 	
 	public World(Handler handler, String path) {
 		this.handler = handler;
 		handler.setWorld(this);
 		tileManager = new TileManager(handler);
-		
+		entityManager = new EntityManager(handler);
 		timerManager = handler.getTimerManager();
 		
 		//	loading=true;
@@ -49,23 +52,16 @@ public class World {
 				Tile t = getTile(x, y);
 				t.setX(x);
 				t.setY(y);
-				
 				tileManager.addTile(t);
-
-
 				System.out.println(t.getName() + " " + t.getX() + " " + t.getY());
-
 			}
 		}
 		System.out.println(tileManager.getTiles().size() + " tiles on map");
 		System.out.println("Map Successfully loaded.");
-		
-	
 	}
 	
 	public void tick(double delta) {
 		timerManager.tick(delta);
-		
 	}
 	
 	public Tile getTile(int x, int y) {
@@ -90,12 +86,10 @@ public class World {
 				getTile(x, y).render(g, (int) (x * Tile.TILEWIDTH - handler.getGameCamera().getxOffset()), (int) (y * Tile.TILEHEIGHT - handler.getGameCamera().getyOffset()));
 			}
 		}
-
+		entityManager.render(g);
 	}
 	
-	
 	//Getters and setters
-	
 	
 	public TileManager getTileManager() {
 		return tileManager;

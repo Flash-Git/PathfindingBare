@@ -17,7 +17,6 @@ public class Handler {
 		return game.getGameCamera();
 	}
 	
-
 	
 	public TimerManager getTimerManager() {
 		return game.getTimerManager();
@@ -50,7 +49,6 @@ public class Handler {
 	public void setWorld(World world) {
 		this.world = world;
 	}
-	
 	
 	
 }

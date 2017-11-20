@@ -23,7 +23,7 @@ public class Display {
 		frame = new JFrame(title);
 		frame.setSize(width, height);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.setResizable(true);//TODO eventually incorporate adaptable sizes
+		frame.setResizable(true);
 		
 		frame.setLocationRelativeTo(null);
 		frame.setVisible(true);
@@ -37,6 +37,7 @@ public class Display {
 		frame.add(canvas);
 		frame.pack();
 	}
+	
 	
 	public Canvas getCanvas() {
 		return canvas;

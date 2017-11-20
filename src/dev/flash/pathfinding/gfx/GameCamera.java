@@ -28,10 +28,9 @@ public class GameCamera {
 		}
 	}
 	
-	
 	public void centerOnEntity(Entity e) {
-		xOffset = e.getX() - handler.getWidth() / 2 + e.getWidth() / 2;
-		yOffset = e.getY() - handler.getHeight() / 2 + e.getHeight() / 2;
+		xOffset = (float) e.getCoord().x - handler.getWidth() / 2 + e.getWidth() / 2;
+		yOffset = (float) e.getCoord().y - handler.getHeight() / 2 + e.getHeight() / 2;
 		checkBlankSpace();
 	}
 	
@@ -40,7 +39,6 @@ public class GameCamera {
 		yOffset += yAmt;
 		checkBlankSpace();
 	}
-	
 	
 	public float getxOffset() {
 		return xOffset;
